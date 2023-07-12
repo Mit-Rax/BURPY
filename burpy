@@ -1,0 +1,47 @@
+#!/bin/bash
+# Coded by AwesomeGuyPrince
+# Init
+FILE="/tmp/out.$$"
+GREP="/bin/grep"
+#....
+# Make sure only root can run our script
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+
+
+figlet -f slant 'BURPY' | lolcat && figlet -f digital  " Coded by AwesomeGuyPrince " | lolcat
+figlet -f digital  "Installing Java" | lolcat
+apt install openjdk-17-jdk -y 
+figlet -f digital  "Java Installed " | lolcat
+clear
+figlet -f digital  "Creating Directory " | lolcat
+mkdir /opt/Burpy
+sleep 2
+figlet -f digital  "Directory Created " | lolcat
+clear
+figlet -f digital  "Moving Files In Directory" | lolcat
+mv burpy-loader.jar /opt/Burpy/
+mv license-generator.jar /opt/Burpy/
+mv burp-suite-professional.svg /usr/share/pixmaps/
+mv burpsuite_pro_v* /opt/Burpy/
+sleep 5
+figlet -f digital  "Files Moved In Directory" | lolcat
+clear
+figlet -f digital  "Writing Executable Commands" | lolcat
+echo "cd /opt/Burpy/ && java  -javaagent:burpy-loader.jar -noverify -jar burpsuite_pro_v*.jar" > /bin/burpy
+chmod +x /bin/burpy
+figlet -f digital  "Executable Commands as Been Written" | lolcat
+clear 
+figlet -f slant  "Burpy" | lolcat && figlet -f digital "Has Been Installed In Your System"
+exit
+
+
+
+
+
+
+
+
+
