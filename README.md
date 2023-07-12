@@ -1,5 +1,5 @@
 # BURPY
-  Burpy Is Burpsuite Professional Installer For Debian Based Linux Distros.
+  BURPY Is Burpsuite Professional Installer For Debian Based Linux Distros.
   
 # Installation Process Step-by-Step
 # 1. Download Burp Suite Proffessional Jar File From 
@@ -9,7 +9,7 @@
      sudo apt install git lolcat figlet -y && \
      git clone https://github.com/AwesomeGuyPrince/BURPY.git
      
-# 2. Put burpsuite_pro_v*.jar File in BURPY Folder Together
+# 2. Put burpsuite_pro_v*.jar File in BURPY Folder
 
 # 3. Change Directory To BURPY By Using Command:
      cd BURPY
