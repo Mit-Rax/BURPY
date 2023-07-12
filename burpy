@@ -17,24 +17,23 @@ apt install openjdk-17-jdk -y
 figlet -f digital  "Java Installed " | lolcat
 clear
 figlet -f digital  "Creating Directory " | lolcat
-mkdir /opt/Burpy
+mkdir /opt/BURPY
 sleep 2
 figlet -f digital  "Directory Created " | lolcat
 clear
 figlet -f digital  "Moving Files In Directory" | lolcat
-mv burpy-loader.jar /opt/Burpy/
-mv license-generator.jar /opt/Burpy/
+mv burpy-loader.jar /opt/BURPY/
 mv burp-suite-professional.svg /usr/share/pixmaps/
-mv burpsuite_pro_v* /opt/Burpy/
+mv burpsuite_pro_v* /opt/BURPY/
 sleep 5
 figlet -f digital  "Files Moved In Directory" | lolcat
 clear
 figlet -f digital  "Writing Executable Commands" | lolcat
-echo "cd /opt/Burpy/ && java  -javaagent:burpy-loader.jar -noverify -jar burpsuite_pro_v*.jar" > /bin/burpy
+echo "cd /opt/BURPY/ && java  -javaagent:burpy-loader.jar -noverify -jar burpsuite_pro_v*.jar" > /bin/burpy
 chmod +x /bin/burpy
 figlet -f digital  "Executable Commands as Been Written" | lolcat
 clear 
-figlet -f slant  "Burpy" | lolcat && figlet -f digital "Has Been Installed In Your System"
+figlet -f slant  "BURPY" | lolcat && figlet -f digital "Has Been Installed In Your System"
 exit
 
 
