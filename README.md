@@ -13,7 +13,7 @@
 # 3. Change Directory To BURPY By Using Command:
      cd BURPY
 # 4. Now Run Burpy By Using Command:
-     bash burpy
+     sudo bash burpy
 # 5. After Installation Use Command:
      burpy-loader
  
