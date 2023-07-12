@@ -29,8 +29,8 @@ sleep 5
 figlet -f digital  "Files Moved In Directory" | lolcat
 clear
 figlet -f digital  "Writing Executable Commands" | lolcat
-echo "cd /opt/BURPY/ && java  -javaagent:burpy-loader.jar -noverify -jar burpsuite_pro_v*.jar" > /bin/burpy
-chmod +x /bin/burpy
+echo "cd /opt/BURPY/ && java -jar burpy-loader.jar" > /bin/burpy-loader
+chmod +x /bin/burpy-loader
 figlet -f digital  "Executable Commands as Been Written" | lolcat
 clear 
 figlet -f slant  "BURPY" | lolcat && figlet -f digital "Has Been Installed In Your System"
