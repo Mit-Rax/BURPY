@@ -6,7 +6,7 @@
    [ https://portswigger-cdn.net/burp/releases/download?product=pro&version=]
      
      sudo apt install git lolcat figlet -y && \
-     git clone https://github.com/AwesomeGuyPrince/BURPY.git
+     git clone https://github.com/Mit-Rax/BURPY.git
      
 # 2. Put burpsuite_pro_v*.jar File in BURPY Folder
 
