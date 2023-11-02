@@ -1,5 +1,5 @@
 #!/bin/bash
-# Coded by AwesomeGuyPrince
+# Coded by MitRax
 # Init
 FILE="/tmp/out.$$"
 GREP="/bin/grep"
@@ -11,29 +11,29 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 
-figlet -f slant 'BURPY' | lolcat && figlet -f digital  " Coded by AwesomeGuyPrince " | lolcat
-figlet -f digital  "Installing Java" | lolcat
+figlet -f slant 'BURPY' && figlet -f digital  " Coded by MitRax" 
+figlet -f digital  "Installing Java" 
 apt install openjdk-17-jdk -y 
-figlet -f digital  "Java Installed " | lolcat
+figlet -f digital  "Java Installed " 
 clear
-figlet -f digital  "Creating Directory " | lolcat
+figlet -f digital  "Creating Directory " 
 mkdir /opt/BURPY
 sleep 2
-figlet -f digital  "Directory Created " | lolcat
+figlet -f digital  "Directory Created " 
 clear
-figlet -f digital  "Moving Files In Directory" | lolcat
+figlet -f digital  "Moving Files In Directory"
 mv burpy-loader.jar /opt/BURPY/
 mv burp-suite-professional.svg /usr/share/pixmaps/
 mv burpsuite_pro_v* /opt/BURPY/
 sleep 5
-figlet -f digital  "Files Moved In Directory" | lolcat
+figlet -f digital  "Files Moved In Directory" 
 clear
-figlet -f digital  "Writing Executable Commands" | lolcat
+figlet -f digital  "Writing Executable Commands" 
 echo "cd /opt/BURPY/ && java -jar burpy-loader.jar" > /bin/burpy-loader
 chmod +x /bin/burpy-loader
-figlet -f digital  "Executable Commands as Been Written" | lolcat
+figlet -f digital  "Executable Commands as Been Written" 
 clear 
-figlet -f slant  "BURPY" | lolcat && figlet -f digital "Has Been Installed In Your System"
+figlet -f slant  "BURPY"  && figlet -f digital "Has Been Installed In Your System"
 exit
 
 
