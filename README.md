@@ -5,7 +5,7 @@
 # 1. Download Burp Suite Proffessional Jar File And Clone BURPY By Using Command:
    [ https://portswigger-cdn.net/burp/releases/download?product=pro&version=]
      
-     sudo apt install git lolcat figlet -y && \
+     sudo apt install git figlet -y && \
      git clone https://github.com/Mit-Rax/BURPY.git
      
 # 2. Put burpsuite_pro_v*.jar File in BURPY Folder
